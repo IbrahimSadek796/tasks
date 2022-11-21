@@ -1,0 +1,209 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --maincolor:green;
+    --transtion: 1s;
+}
+
+/* firest navbar */
+
+.navbar{
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    z-index: 12;
+    left: 0px;
+    right: 0px;
+
+}
+
+.continer{
+    margin-left: 60px ;
+    padding: 10px 0px;
+}
+
+.navbar .continer .logo{
+    color: var(--maincolor);
+    display: inline;
+    margin-right: 30px;
+}
+
+@keyframes arrow{
+    0%{
+        color: var(--maincolor);
+    }
+    100%{
+        color: white;
+    }
+}
+
+.navbar .continer .logo h1{
+    display: inline;
+}
+
+.navbar .continer .unorderlist{
+    display: inline;
+}
+
+.navbar .continer .unorderlist li{
+    list-style: none;
+    display: inline;
+}
+
+.navbar .continer .unorderlist li i{
+    font-size: xx-large;
+    color: var(--maincolor);
+    animation-name: arrow;
+    animation-delay: 2s;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.navbar .continer .unorderlist .link{
+    display: inline;
+}
+
+.navbar .continer .unorderlist .link a{
+    margin: 20px;
+    color: white;
+    text-decoration: none;
+    transition: var(--transtion);
+}
+
+.navbar .continer .unorderlist .link a:hover{
+    letter-spacing: 3px;
+    color: var(--maincolor);
+}
+.navbar .continer .button{
+    position: absolute;
+    right: 0px;
+   
+    display: inline;
+}
+
+.navbar .continer .button button{
+
+    background-color: white;
+    color: var(--maincolor);
+    font-weight: bold;
+    padding: 3px;
+    margin: 5px;
+    transition: var(--transtion);
+    border-radius: 8px;
+}
+
+.navbar .continer .button button:hover{
+    background-color: var(--maincolor);
+    color: white;
+}
+
+/* End navbar */
+
+/* firest header */
+
+.header{
+    background-image: url(../Img/christopher-gower-m_HRfLhgABo-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.header .heart{
+    
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50% , 50%);
+}
+
+.header .heart i{
+    font-size: 70px;
+   transition: var(--transtion);
+    color: var(--maincolor);
+    animation-name: heart;
+    animation-delay: 2s;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+.header .heart i:hover{
+    transform: rotate(180deg);
+    color: var(--maincolor);
+    font-size: 70px;
+    animation-name: none;
+    
+}
+
+@keyframes heart{
+    0%{
+        color: var(--maincolor);
+    }
+    
+    100%{
+        color: white;
+        font-size: 68px;
+    }
+}
+
+.header .Searching{
+    width: 60%;
+    height: 50px;
+    position: absolute;
+    left: 10%;
+    bottom: 80%;
+    color: var(--maincolor);
+    padding: 10px;
+}
+
+.header .Searching input{
+    position: absolute;
+    display: inline;
+    margin: 0px 5px;
+    padding: 10px;
+    width:70% ;
+    border-radius: 15px;
+}
+
+.header .Searching label{
+    font-size: 20px;
+    margin: 20px 0px;
+}
+
+.header .contdiv{
+    position: absolute;
+    bottom: 40%;
+    right: 10%;
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+    color: var(--maincolor);
+    text-align: center;
+    background-color: rgba(0, 0, 0,);
+}
+
+.header .contdiv p{
+    margin: 10px 0px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.header .contdiv button{
+    background-color: rgba(0, 0, 0,);
+    color: var(--maincolor);
+    padding: 3px;
+    font-weight: bolder;
+    border-radius: 8px;
+    transition: var(--transtion);
+}
+
+.header .contdiv button:hover{
+    color: white;
+    background-color: var(--maincolor);
+}
