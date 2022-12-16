@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/all.min.css">
+    <link rel="stylesheet" href="./style/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/main.css">
+    <title>Bootstrap1</title>
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+        <div class="container-fluid container">
+          <h1 class="title">Mountains</h1>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse d-flex justify-content-center navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#service">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#country">Country</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacts">Contacts</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+
+      <!-- Header -->
+      <header id="home" class="head">
+        <div class="layout d-flex justify-content-center align-items-center flex-column w-100 h-100 text-white text-align-center">
+            <h2>Welcom to <span>mountains</span></h2>
+            <p>a mountain is an elevated portion of the earth's crust, generally with steep sides thst show sighificant exposed bedrock</p>
+        </div>
+      </header>
+      <!-- end header -->
+
+      <!-- service -->
+      <section id="service" class="service  py-5">
+        <div class="container">
+            <div class="title position-relative d-flex justify-content-center align-items-center">
+                <h3 class="position-relative d-inline">Service</h3>
+            </div>
+            <div class="row g-3 py-5">
+                <div class="col-md-4 position-relative py-2">
+                    <div class="item shadow rounded">
+                     <i class="fas fa-eye icon position-absolute top-50 start-50 translate-middle text-white fs-1"></i>
+                     <img class="image w-100 rounded" src="./image/work1.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="col-md-4 position-relative py-2">
+                    <div class="item shadow rounded">
+                     <i class="fas fa-eye icon position-absolute top-50 start-50 translate-middle text-white fs-1"></i>
+                     <img class="image w-100 rounded" src="./image/work2 (1).jfif" alt="">
+                    </div>
+                </div>
+
+                <div class="col-md-4 position-relative py-2">
+                    <div class="item shadow rounded ">
+                     <i class="fas fa-eye icon position-absolute top-50 start-50 translate-middle text-white fs-1"></i>
+                     <img class="image w-100 rounded" src="./image/work3.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="col-md-4 position-relative py-2">
+                    <div class="item shadow rounded">
+                     <i class="fas fa-eye icon position-absolute top-50 start-50 translate-middle text-white fs-1"></i>
+                     <img class="image w-100 rounded" src="./image/work4.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="col-md-4 position-relative py-2">
+                    <div class="item shadow rounded">
+                     <i class="fas fa-eye icon position-absolute top-50 start-50 translate-middle text-white fs-1"></i>
+                     <img class="image w-100 rounded" src="./image/work5.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="col-md-4 position-relative py-2">
+                    <div class="item shadow rounded">
+                     <i class="fas fa-eye icon position-absolute top-50 start-50 translate-middle text-white fs-1"></i>
+                     <img class="image w-100 rounded" src="./image/work6.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- end ssrvice -->
+
+      <!-- country -->
+      <section id="country" class="country">
+        <div class="countainer">
+            <div class="img-home mb-3">
+                <div class="layout w-100 h-100 position-absolute d-flex justify-content-center align-items-center text-align-center text-white flex-column">
+                    <h3 class="text-uppercase mt-5">countries</h3>
+                    <p class="py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt et quod ratio</p>
+                </div>
+            </div>
+
+            <ul class="nav nav-tabs my-5 py-3 d-flex justify-content-center bg-dark text-info" id="myTab" role="tablist">
+                <li class="nav-item text-info" role="presentation">
+                  <button class="btn btn-outline-info active mx-2" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Egypt</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="btn mx-2 btn-outline-info" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">United State</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="btn mx-2 btn-outline-info" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">India</button>
+                </li>
+                
+            </ul>
+              <div class="tab-content" id="myTabContent">
+                <!-- egypt -->
+                <div class="tab-pane fade show active mx-3" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                    <div class="row g-3 ">
+                        <div class="col-md-4 position-relative py-2 ">
+                            <div class="item shadow rounded">
+                             
+                             <img class="image w-100 rounded" src="./image/eg1.jpg" alt="">
+                            </div>
+                        </div>
+        
+                        <div class="col-md-4 position-relative py-2">
+                            <div class="item shadow rounded">
+                             
+                             <img class="image w-100 rounded" src="./image/eg2.jpg" alt="">
+                            </div>
+                        </div>
+        
+                        <div class="col-md-4 position-relative py-2">
+                            <div class="item shadow rounded ">
+                            
+                             <img class="image w-100 rounded" src="./image/eg3.jpg" alt="">
+                            </div>
+                        </div>
+        
+                        <div class="col-md-4 position-relative py-2">
+                            <div class="item shadow rounded">
+                            
+                             <img class="image w-100 rounded" src="./image/eg5.jpg" alt="">
+                            </div>
+                        </div>
+        
+                        <div class="col-md-4 position-relative py-2">
+                            <div class="item shadow rounded">
+                             
+                             <img class="image w-100 rounded" src="./image/eg6.jpg" alt="">
+                            </div>
+                        </div>
+        
+                        <div class="col-md-4 position-relative py-2">
+                            <div class="item shadow rounded">
+                             
+                             <img class="image w-100 rounded" src="./image/eg4.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end egypt -->
+
+                <!-- usa -->
+                <div class="tab-pane fade shadow mx-3" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                    <div class="row g-3 ">
+                        <div class="col-md-4 position-relative py-2">
+                            <div class="item shadow rounded">
+                             
+                             <img class="image w-100 rounded" src="./image/us1.jpg" alt="">
+                            </div>
+                        </div>
+        
+                        <div class="col-md-4 position-relative py-2">
+                            <div class="item shadow rounded">
+                             
+                             <img class="image w-100 rounded" src="./image/us2.jpg" alt="">
+                            </div>
+                        </div>
+        
+                        <div class="col-md-4 position-relative py-2">
+                            <div class="item shadow rounded ">
+                             
+                             <img class="image w-100 rounded" src="./image/us3.jpg" alt="">
+                            </div>
+                        </div>
+        
+                        <div class="col-md-4 position-relative py-2">
+                            <div class="item shadow rounded">
+                             
+                             <img class="image w-100 rounded" src="./image/us4.jpg" alt="">
+                            </div>
+                        </div>
+        
+                        <div class="col-md-4 position-relative py-2">
+                            <div class="item shadow rounded">
+                             
+                             <img class="image w-100 rounded" src="./image/us5.jpg" alt="">
+                            </div>
+                        </div>
+        
+                        <div class="col-md-4 position-relative py-2">
+                            <div class="item shadow rounded">
+                             
+                             <img class="image w-100 rounded" src="./image/us6.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end usa -->
+
+                <!-- india -->
+                <div class="tab-pane fade mx-3" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0"> <div class="row g-3">
+                    <div class="col-md-4 position-relative py-2">
+                        <div class="item shadow rounded">
+                         
+                         <img class="image w-100 rounded" src="./image/in1.jpg" alt="">
+                        </div>
+                    </div>
+    
+                    <!--  -->
+                    <div class="col-md-4 position-relative py-2">
+                        <div class="item shadow rounded">
+                         
+                         <img class="image w-100 rounded" src="./image/in2.jpg" alt="">
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4 position-relative py-2">
+                        <div class="item shadow rounded ">
+                         
+                         <img class="image w-100 rounded" src="./image/in3.jpg" alt="">
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4 position-relative py-2">
+                        <div class="item shadow rounded">
+                         
+                         <img class="image w-100 rounded" src="./image/in5.jpg" alt="">
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4 position-relative py-2">
+                        <div class="item shadow rounded">
+                         
+                         <img class="image w-100 rounded" src="./image/in5.jpg" alt="">
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4 position-relative py-2">
+                        <div class="item shadow rounded">
+                         
+                         <img class="image w-100 rounded" src="./image/in6.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end india -->
+              </div>
+        </div>
+      </section>
+      <!-- end country -->
+
+      <!-- content -->
+      <section id="contacts" class="contact bg-light w-100 d-flex justify-content-center align-items-center my-5 outline-non py-5 flex-column">
+        
+        <form class="form bg-body w-75 p-4 d-flex justify-content-space-around align-items-center flex-wrap-nowrap text-darck">
+            <h3 class="title">Contact Us</h3>
+            <input class="item form-control my-2" type="text" placeholder="Enter Your Title">
+            <input class="item item form-control my-2" type="email" placeholder="Enter Your Email">
+            <textarea class="item item form-control my-2" name="mesage" id="" cols="30" rows="10" placeholder="Enter Mesage"></textarea>
+            <div class="butom w-100 d-flex justify-content-start align-items-center">
+                <button class="btn btn-outline-info text-darck px-4 py-2 mt-3">Contacts</button>
+            </div>
+        </form>
+      </section>
+      <!-- end content -->
+
+      <!-- footer -->
+      <footer class="footer w-100 bg-dark text-white text-align-center position-relative py-5">
+        <div class="container flex-column w-100 text-align-center m-auto d-flex justify-content-center align-items-center ">
+            <p>copyright &copy;Reserved <span>Ibrahim Sadek</span></p>
+            <a href="#" class="text-white">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+      </footer>
+      <!-- end footer -->
+    <script src="./style/bootstrap.bundle.min.js"></script>
+</body>
+</html>
