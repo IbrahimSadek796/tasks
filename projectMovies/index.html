@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hup</title>
+    <link rel="icon" href="./asset/image/image/icon.png">
+    <link rel="stylesheet" href="./asset/style/all.min.css">
+    <link rel="stylesheet" href="./asset/style/bootstrap.min.css">
+    <link rel="stylesheet" href="./asset/style/index.css">
+</head>
+<body>
+
+    <div class="loading">
+        
+            <img style="width: 4rem;" src="./asset/image/image/icon.png" alt="">
+        
+    </div>
+    
+    <div class="up-top">
+        <i class="fas fa-circle-up"></i>
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img style="width: 3rem;" src="./asset/image/image/icon.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" id="bt"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#categories">Categories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./movies.html" target="_self">Movies</a>
+              </li>
+            </ul>
+            <span class="navbar-text" id="welcom"></span>
+            <button id="btnOut" class="btn text-dark">LogOut</button>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="layout">
+            <div class="container">
+                <div class="items">
+                    <h1>Welcom to <span>Movies</span> Hup</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum veniam saepe illo hic at, cum esse quis blanditiis modi natus?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ............Aout......... -->
+    <section class="about bg-light" id="about">
+        <div class="container">
+            <div class="paragraph">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique earum vel doloremque neque minima, enim quidem. At odit labore exercitationem facere illum minus placeat nobis libero inventore possimus, rem sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt accusamus, non consectetur sit, voluptatibus eum ipsum recusandae, eligendi nihil obcaecati amet maiores sed fugit dignissimos aperiam illo modi fugiat ab?</p>
+            </div>
+            <div class="row g-5">
+                <div class="col-md-4">
+                    <div class="data">
+                        <h4>Action</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="data">
+                        <h4>Stories</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="data">
+                        <h4>Tv</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ............Catogries.............. -->
+
+    <section class="categories py-5 bg-dark" id="categories">
+        
+        <div class="container py-5">
+            <div class="items vh-100">
+                <div class="title">
+                    <h2>CATEGORIES</h2>
+                </div>
+                <div class="row g-5">
+                    <div class="col-md-6">
+                        <div class="image m-auto">
+                            <img style="width: 100%;" src="./asset/image/image/1.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="image m-auto">
+                            <img style="width: 100%;" src="./asset/image/image/3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="review">
+        <div class="overlay py-5">
+            <div class="container m-auto">
+                <div class="row g-5 m-auto">
+                    <div class="col-md-4 m-auto">
+                        <div class="random text-center">
+                            <span class="number"></span>
+                            <h3>Reviews</h3>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 m-auto">
+                        <div class="random text-center">
+                            <span class="number"></span>
+                            <h3>Watching</h3>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 m-auto">
+                        <div class="random text-center">
+                            <span class="number"></span>
+                            <h3>Subscribe</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- .............foter................ -->
+    <footer class="bg-dark">
+        <div class="container bg-dark d-flex justify-content-center align-items-center">
+            <div class="item">
+                <p>&copy;Copyright. All Reserved <span>Ibrahim Sadek</span></p>
+                <div class="links">
+                    <a href="#" class="fab fa-facebook"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                    <a href="https://github.com/IbrahimSadek796" class="fab fa-github"></a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="./asset/js/bootstrap.bundle.min.js"></script>
+    <script src="./asset/js/jquery-3.6.3.min.js"></script>
+    <script src="./asset/js/index.js"></script>
+</body>
+</html>

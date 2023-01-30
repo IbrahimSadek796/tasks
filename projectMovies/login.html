@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hup</title>
+    <link rel="icon" href="./asset/image/image/icon.png">
+    <link rel="stylesheet" href="./asset/style/all.min.css">
+    <link rel="stylesheet" href="./asset/style/bootstrap.min.css">
+    <link rel="stylesheet" href="./asset/style/login.css">
+</head>
+<body>
+    <div class="lay" id="lay">
+        <div class="container">
+            <div class="items d-flex justify-content-center align-items-center vh-100">
+                <div class="form w-50 m-auto p-2 text-center rounded shadow">
+                    <div class="color-danger" id="error"></div>
+                    <div class="form-caption py-2 ">
+                        <img style="width: 2rem;" src="./asset/image/image/icon.png" alt="">
+                    </div>
+                    <input type="text" class="form-control my-5" value="" placeholder="Enter your Name....." id="nameInput">
+                    <input type="email" class="form-control my-5" placeholder="Enter your Email" id="emailInput">
+                    <input type="password" class="form-control my-5" placeholder="Enter Your Passswerd" id="passInput">
+                    <div class="item d-flex justify-content-between">
+                        <button class="btn btn-ouline-danger bg-danger" id="btnLogin">Login</button>
+                        <a id="alert" href="#">عارف أنك أكيد نسيت كلمة السر؟</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="./asset/js/bootstrap.bundle.min.js"></script>
+<script src="./asset/js/jquery-3.6.3.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="http://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="./asset/js/login.js"></script>
+</body>
+</html>

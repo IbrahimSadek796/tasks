@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;500;600;700&display=swap');
+:root {
+    --main-font: 'Dosis', sans-serif;
+    --light-bg: #1B2430;
+    --main-color:#E94560;
+    --font-color: #fff;
+    --transition: .7s;
+    --border:2px solid rgb(51, 51, 51);
+  }
+  a{
+    color: var(--font-color);
+    text-decoration: none;
+  }
+  
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--main-font);
+    background-image: url(..//image/image/1.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.lay{
+    background-color: rgba(0, 0, 0, .9);
+}
+.form{
+    background-color: rgb(37, 37, 105);
+}
+
+input:focus{
+    background-color: var(--main-color) !important;
+    color: var(--font-color) !important;
+    transition: var(--transition);
+  
+    
+}
+
+
+.alert{
+    width: 30rem;
+    height: 18rem;
+    background-color:var(--main-color);
+    
+}

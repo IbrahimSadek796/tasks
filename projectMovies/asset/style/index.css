@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;500;600;700&display=swap');
+:root {
+    --main-font: 'Dosis', sans-serif;
+    --light-bg: #1B2430;
+    --main-color:#E94560;
+    --font-color: #fff;
+    --transition: .7s;
+    --border:2px solid rgb(51, 51, 51);
+  }
+  a{
+    color: var(--font-color);
+    text-decoration: none;
+  }
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    width: .5rem;
+    transition: width 2s;
+  }
+  
+  ::-webkit-scrollbar-track {
+    margin: 5px 0;
+    border-radius: 2px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--light-bg);
+    border-radius: 4px;
+  }
+  body{
+    font-family: var(--main-font);
+    overflow: hidden;
+  }
+  
+/* ........................................................................................ */
+
+.loading{
+    position: fixed;
+    z-index: 99999;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-bg);
+    
+    
+}
+.loading img{
+    animation-name: icon;
+    animation-delay: var(--transition);
+    animation-duration: var(--transition);
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes icon{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.up-top{
+  
+    position: fixed;
+    z-index: 9999;
+    bottom: 3%;
+    right: 3%;
+    background-color: var(--main-color);
+    font-size: large;
+    font-weight: bold;
+    color: var(--font-color);
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    display: none;
+    animation-name: up;
+    animation-duration:var(--transition);
+    animation-delay: var(--transition);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.up-top i{
+    font-size: 2rem;
+    font-weight: 900;
+}
+@keyframes up{
+    from{
+        bottom: 3%;
+    }
+    to{
+        bottom: 5%;
+    }
+}
+
+.navbar{
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    margin: auto;
+    z-index: 1000;
+    border-radius: 8px;
+
+}
+
+ 
+.nav-link{
+    transition: var(--transition);
+    font-weight: bold;
+}
+.nav-link:hover{
+    color: var(--main-color) !important;
+    transform: translateY(-5px);
+}
+
+.navbar span,
+.navbar i,
+.navbar .btn,
+.nav-link{
+    transition: var(--transition);
+    font-weight: bold;
+    font-size: 1.2rem;
+    
+}
+.navbar span:hover,
+.navbar i:hover,
+.navbar .btn:hover{
+    color: var(--main-color) !important;
+    transform: translateY(-5px);
+}
+
+/* .....................Home............................... */
+.home{
+   
+    width: 100%;
+    background-image: url(../image/image/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.home .layout{
+    
+    background-color: rgba(0, 0, 0, .9);
+}
+.home .layout .container{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    
+}
+.home .layout .items{
+    display: flex;
+    margin: auto;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 50%;
+    color: var(--font-color);
+}
+
+.home span{
+    color: var(--main-color);
+}
+
+/* .....................About...................... */
+.about{
+    padding: 5rem;
+}
+.abou .container{
+    text-align: center;
+}
+.about .container .data{
+    position: relative;
+    background-color: #fff;
+    padding:30px 5px;
+    margin-top: 5rem;
+    text-align: center;
+    height: 200px;
+    z-index: 5;
+    overflow: hidden;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.about .container .data:hover{
+    transform: translateY(-20px);
+    color: var(--font-color);
+    
+}
+
+.about .container .data::after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-color: var(--light-bg);
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    top: 0%;
+    transition: var(--transition);
+    transform: skewX(180deg);
+}
+
+.about .container .data:hover.data::after{
+    background-color: var(--main-color);
+    left: 0%;
+    transform: skewX(0);
+}
+
+/* .....catogries................... */
+
+.categories .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    color: var(--font-color);
+}
+
+.categories .title h2{
+    position: relative;
+}
+
+.categories .title h2::after{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--main-color);
+}
+
+.review{
+    background-image: url(../image/image/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.review .overlay{
+    background-color: rgba(0, 0, 0, .9);
+    color: var(--font-color);
+}
+
+.review .overlay .random{
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    text-align: center;
+    margin-bottom: 30px;
+    cursor: pointer;
+    margin: auto;
+    padding-top: 2rem;
+         
+}
+.review .overlay .random::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    border: solid var(--main-color) 3px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px var(--main-color);
+    transition: var(--transition);
+}
+
+.review .overlay .random:hover.random::before{
+    border-radius: 50%;
+    transform: rotate(90deg);
+}
+.number{
+    font-size: 2rem;
+}
+
+/* ............foter.......... */
+footer .item{
+    text-align: center;
+    width: 20%;
+    color: var(--font-color);
+    margin: 3rem;
+}
+
+footer .item span{
+    color: var(--main-color);
+}
+footer .item .links .fab{
+    font-weight: bold;
+    font-size:larger;
+    margin-left: 10px;
+    transition: var(--transition);
+}
+footer .item .links .fab:hover{
+    color: var(--main-color);
+}
