@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./asset/css/all.min.css" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
+    <title>AMIT Vue.js</title>
+</head>
+<body>
+  <div id="app">
+    <h1>GitHub Profiles</h1>
+    <app-post v-for="data in datas" :image="data.imgUrl" :profile="data.profileUrl" :name="data.name" :date="data.date" :job="data.job" :friends="data.friendUrl" :number="data.friendNum"></app-post>
+  </div>
+  
+    <script src="./asset/js/bootstrap.bundle.min.js"></script>
+    <script src="./asset/js/vue.js"></script>
+    <script>
+        
+        Vue.component('app-post',{
+          data : function () {
+            return {
+              name:"Ahmed",
+              count:0
+            }
+          },
+          props:["name","date","job","image","profile","friendUrl","friends","number"],
+          template:`
+          <div class="ui card">
+            <div class="image"><img :src="image"></div>
+            <div class="content"><a style="color:#000; font-weight: bold;" :href="profile">{{name}}</a>
+              <div class="meta"><span class="date">Joined in {{date}}</span></div>
+              <div class="description">{{job}}</div>
+            </div>
+            <div class="extra content">
+                    <a :href="friends">
+                        <i class="user icon"></i>
+                        {{number}} Friends
+                    </a>
+                </div>
+          </div>
+          `
+        })
+
+        var vue=new Vue({
+          el:"#app",
+          data:{
+            datas:[
+              {name:"Daniel Kelly",date:"2014-05-19", job:"", imgUrl:"https://avatars.githubusercontent.com/u/7635209?v=4",profileUrl:"https://github.com/danielkellyio",friendUrl:"https://github.com/danielkellyio?tab=followers", friendNum:"186"},
+              {name:"Alex Kyriakidis",date:"2013-12-10", job:"Developer - Teacher - Author- Consultant", imgUrl:"https://avatars.githubusercontent.com/u/6147968?v=4",profileUrl:"https://github.com/hootlex",friendUrl:"https://github.com/hootlex?tab=followers", friendNum:"1044"},
+              {name:"Rolf Haug",date:"2010-06-16", job:"Educator and web developer. Co-founder of Vue School", imgUrl:"https://avatars.githubusercontent.com/u/306927?v=4",profileUrl:"https://github.com/rahaug",friendUrl:"https://github.com/rahaug?tab=followers", friendNum:"160"},
+              {name:"Guillaume Chau",date:"2012-11-14", job:"Web & JavaScript enthusiast, @vuejs core team.", imgUrl:"https://avatars.githubusercontent.com/u/2798204?v=4",profileUrl:"https://github.com/akryum",friendUrl:"https://github.com/akryum?tab=followers", friendNum:"4541"}
+            ]
+          },
+        })
+
+    </script>
+</body>
+</html>
